@@ -1,11 +1,13 @@
 import "./App.css";
 import HomePage from "./Pages/HomePage/HomePage";
 import { Route } from "react-router-dom";
+import ShopPage from "./Pages/Shop/Shop";
 
 function App() {
   return (
     <div>
-      <HomePage />
+      <Route exact path="/" component={HomePage} />
+      <Route path="/shop" component={ShopPage} />
     </div>
   );
 }
